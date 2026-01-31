@@ -1,1 +1,108 @@
+/* Base resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root fonts & colors */
+:root {
+  --primary: #E63946;
+  --dark: #0D0D0D;
+  --light: #F7F7F7;
+  --text: #222;
+  --cta: #E63946;
+  --cta-hover: #B22232;
+  --nav-bg: #0D0D0D;
+  --nav-text: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Navigation */
+header {
+  background: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--cta);
+}
+
+/* Hero Banner */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.btn {
+  background: var(--cta);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: var(--cta-hover);
+}
+
+/* Section Titles */
+section {
+  padding: 4rem 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: var(--nav-bg);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
 
